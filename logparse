@@ -1,0 +1,6 @@
+#!/usr/bin/php
+<?php
+  require('controller/logparse.php');
+
+  $controller = new logParseController;
+  $controller->process($argv);
