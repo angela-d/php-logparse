@@ -1,6 +1,8 @@
 #!/usr/bin/php
 <?php
-  require('controller/logparse.php');
 
-  $controller = new logParseController;
-  $controller->process($argv);
+// initialize the classes
+require('classes/autoload.php');
+
+// check the cli for arguments being passed
+$logparse->process($argv);
